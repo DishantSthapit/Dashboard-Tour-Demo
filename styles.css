@@ -1,0 +1,247 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.menu-bar {
+    background-color: #333;
+}
+
+.menu-bar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3498db;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #2c3e50, #4e5d6c);
+    z-index: -1;
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-weight: 700;
+    color: #ecf0f1;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.user-list {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.user-list h2 {
+    color: #ecf0f1;
+    font-weight: 600;
+}
+
+.list-group-item {
+    background-color: #34495e;
+    border-color: #34495e;
+    color: #ecf0f1;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #2c3e50;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    margin-left: 10px;
+}
+
+.badge-primary {
+    background-color: #3498db;
+}
+
+.badge-success {
+    background-color: #2ecc71;
+}
+
+.badge-warning {
+    background-color: #f39c12;
+}
+
+.badge-info {
+    background-color: #1abc9c;
+}
+
+.badge-secondary {
+    background-color: #95a5a6;
+}
+
+.card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card .card-body {
+    padding: 20px;
+}
+
+.chart-container {
+    padding: 20px;
+}
+
+.stat-item {
+    margin-bottom: 20px;
+}
+
+.stat-item .card-body {
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+.stat-item .card-text {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-item .card-text .text-success {
+    margin-left: 10px;
+}
+
+.stat-item .card-text .text-danger {
+    margin-left: 10px;
+}
+
+.text-center h2 {
+    font-weight: 600;
+}
+
+.text-center p {
+    font-size: 1rem;
+}
+
+.background {
+    height: '100%';
+}
+
+.bg-black {
+    background-color: black;
+}
+/* Custom Tab Styles */
+.custom-tabs .nav-link {
+    color: #6c757d; /* Default color for tab links */
+    background-color: #f8f9fa; /* Background color for inactive tabs */
+    border: 1px solid #dee2e6; /* Border color for inactive tabs */
+    border-radius: 0.25rem; /* Rounded corners for tabs */
+    margin-bottom: -1px; /* Remove bottom margin for the active tab border */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.custom-tabs .nav-link.active {
+    color: #fff; /* Color for active tab text */
+    background-color: #007bff; /* Background color for active tab */
+    border-color: #007bff; /* Border color for active tab */
+    font-weight: 500; /* Font weight for active tab text */
+}
+
+.custom-tabs .nav-link:hover {
+    background-color: #e9ecef; /* Background color on hover */
+    color: #495057; /* Text color on hover */
+}
+
+.custom-tabs .tab-content {
+    border: 1px solid #dee2e6; /* Border around the tab content */
+    border-radius: 0.25rem; /* Rounded corners for tab content */
+    padding: 1rem; /* Padding inside tab content */
+    background-color: #fff; /* Background color for tab content */
+}
+
+.custom-tabs .tab-pane {
+    padding: 1rem; /* Padding inside each tab pane */
+    
+}
+
+/* Optional: Add box-shadow for a more modern look */
+.custom-tabs .nav-link {
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); /* Inner shadow for inactive tabs */
+    margin: 0 0.2rem;
+}
+
+.custom-tabs .nav-link.active {
+    box-shadow: none; /* Remove shadow for active tab */
+}
+
+.menu-bar {
+    background-color: black;
+    padding: 1rem 0;
+    /* border-bottom: 1px solid white; */
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+}
+.menu-bar .navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+}
+.menu-bar .nav-link {
+    color: white !important;
+    margin: 0 0.5rem;
+    font-weight: 500;
+}
+.menu-bar .nav-link:hover {
+    color: #ffc107 !important;
+}
+.menu-bar .navbar-toggler {
+    border: none;
+}
+.menu-bar .navbar-toggler-icon {
+    color: white;
+}
+
