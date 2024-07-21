@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/driver.js/0.9.8/driver.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="container-fluid">
+            <nav class="top-nav navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Dashboard Demo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Analytics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="background"></div>
+    <div class="container-fluid py-5">
+        <main class="container-fluid">
+            <div class="row">
+                <aside class="col-md-3 sidebar">
+                    <div class="user-list text-white p-4 mb-4 animate__animated animate__fadeInLeft">
+                        <h2>User List</h2>
+                        <ul class="list-group">
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    John Doe
+                                </div>
+                                <span class="badge badge-primary badge-pill">Admin</span>
+                            </li>
+              
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/women/8.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Laura Davis
+                                </div>
+                                <span class="badge badge-warning badge-pill">Moderator</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    James Brown
+                                </div>
+                                <span class="badge badge-info badge-pill">Editor</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Jessica Miller
+                                </div>
+                                <span class="badge badge-secondary badge-pill">Viewer</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Chris Johnson
+                                </div>
+                                <span class="badge badge-primary badge-pill">Admin</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Olivia Martinez
+                                </div>
+                                <span class="badge badge-success badge-pill">Member</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Daniel Anderson
+                                </div>
+                                <span class="badge badge-warning badge-pill">Moderator</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Emily Thomas
+                                </div>
+                                <span class="badge badge-info badge-pill">Editor</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Michael Lee
+                                </div>
+                                <span class="badge badge-secondary badge-pill">Viewer</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/women/16.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Sophia Wilson
+                                </div>
+                                <span class="badge badge-primary badge-pill">Admin</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/men/17.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Matthew Young
+                                </div>
+                                <span class="badge badge-success badge-pill">Member</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Ava Martin
+                                </div>
+                                <span class="badge badge-warning badge-pill">Moderator</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    William Moore
+                                </div>
+                                <span class="badge badge-info badge-pill">Editor</span>
+                            </li>
+                            <li class="bg-black list-group-item d-flex justify-content-between align-items-center">
+                                <div class="user-info">
+                                    <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                    Isabella Taylor
+                                </div>
+                                <span class="badge badge-secondary badge-pill">Viewer</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <section class="col-md-9">
+                    <section class="user-details user-info mb-4 animate__animated animate__fadeInUp">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Welcome, John Doe</h2>
+                                <p>Last login: July 18, 2024</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Sales Overview Section -->
+                    <section class="charts row animate__animated animate__fadeInUp mb-4">
+                        <div class="col-md-6 chart-container mb-4">
+                            <div class="card bg-black text-white">
+                                <div class="card-body">
+                                    <h3 class="card-title">Sales Overview</h3>
+                                    <canvas id="salesChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 chart-container mb-4">
+                            <div class="card bg-black text-white">
+                                <div class="card-body">
+                                    <h3 class="card-title">Monthly Sales</h3>
+                                    <canvas id="monthlySalesChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Analytics Section -->
+                    <section class="charts row animate__animated animate__fadeInUp mb-4">
+                        <div class="col-md-6 chart-container mb-4">
+                            <div class="card bg-black text-white">
+                                <div class="card-body">
+                                    <h3 class="card-title">Revenue Overview</h3>
+                                    <canvas id="revenueChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 chart-container mb-4">
+                            <div class="card bg-black text-white">
+                                <div class="card-body">
+                                    <h3 class="card-title">Quarterly Revenue</h3>
+                                    <canvas id="quarterlyRevenueChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Users Section -->
+
+                    
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: ".background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xbe7f7f,
+            backgroundColor: 0x0
+        })
+        
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
