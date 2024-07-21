@@ -1,7 +1,7 @@
 
 # Professional Dashboard
 
-A professional dashboard built with HTML, CSS, Bootstrap, and JavaScript. This dashboard includes a user list, various charts for analytics, and a stylish top menu bar.
+A professional dashboard built with HTML, CSS, Bootstrap, and JavaScript. This dashboard includes a user list, various charts for analytics, and a stylish top menu bar. [Demo](https://dashboard-tour-demo.netlify.app/) 
 
 ## Features
 
